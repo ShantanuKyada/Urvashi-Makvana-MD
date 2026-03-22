@@ -6,6 +6,8 @@
 <title>E Heal Homoeopathic Clinic | Dr. Urvashi Makwana MD (Hom)</title>
 <!-- EmailJS SDK -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- Razorpay SDK -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -282,7 +284,7 @@
 
 <!-- ══ WHATSAPP FLOATING BUTTON ══ -->
 <div class="whatsapp-float">
-  <a href="https://wa.me/919979757788?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/917043402872?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
     <div class="whatsapp-float-icon">
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="24" cy="24" r="24" fill="#25D366"/>
@@ -301,7 +303,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#expertise">Expertise</a></li>
       <li><a href="#online">Online Consult</a></li>
-      <li><a href="#why">Why Me</a></li>
+      <li><a href="#why">Why Us</a></li>
       <li><a href="#appointment" class="btn-book-nav">Book Appointment</a></li>
     </ul>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -314,10 +316,10 @@
   <a href="#about" onclick="closeMenu()">About Dr. Makwana</a>
   <a href="#expertise" onclick="closeMenu()">Areas of Expertise</a>
   <a href="#online" onclick="closeMenu()">Online Consultation</a>
-  <a href="#why" onclick="closeMenu()">Why Choose Me</a>
+  <a href="#why" onclick="closeMenu()">Why Choose Us</a>
   <a href="#appointment" onclick="closeMenu()">📅 Book Appointment</a>
-  <a href="https://wa.me/919979757788?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener">💬 WhatsApp: +91 9979757788</a>
-  <a href="tel:+919979757788">📞 +91 9979757788</a>
+  <a href="https://wa.me/917043402872?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener">💬 WhatsApp: +91 7043402872</a>
+  <a href="tel:+917043402872">📞 +91 7043402872</a>
 </div>
 
 <!-- HERO -->
@@ -332,7 +334,7 @@
       </p>
       <div class="hero-actions">
         <a href="#appointment" class="btn-primary">📅 Book Appointment</a>
-        <a href="https://wa.me/919979757788?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener" class="btn-whatsapp">
+        <a href="https://wa.me/917043402872?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener" class="btn-whatsapp">
           <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5 13.5C32.1 11.1 28.9 9.6 25.5 9.5C18.4 9.5 12.6 15.3 12.6 22.4C12.6 24.7 13.2 26.9 14.4 28.9L12.5 36L19.8 34.1C21.7 35.2 23.6 35.8 25.5 35.8C32.6 35.8 38.4 30 38.4 22.9C38.5 19.4 37 16.1 34.5 13.5ZM25.5 33.5C23.8 33.5 22.1 33 20.6 32.1L20.2 31.9L15.8 33.1L17 28.8L16.7 28.4C15.7 26.8 15.1 25 15.1 22.9C15.1 17 19.9 12.2 25.8 12.2C28.6 12.2 31.3 13.3 33.3 15.3C35.3 17.3 36.4 20 36.4 22.9C36.2 28.8 31.4 33.5 25.5 33.5ZM31.4 25.6C31.1 25.4 29.6 24.7 29.3 24.6C29 24.5 28.8 24.4 28.6 24.7C28.4 25 27.8 25.6 27.6 25.9C27.4 26.1 27.2 26.1 26.9 26C25.8 25.5 24.8 24.8 24 24C23.3 23.2 22.7 22.3 22.2 21.3C22 21 22.2 20.8 22.4 20.6C22.6 20.4 22.8 20.1 22.9 19.9C23.1 19.7 23.1 19.5 23.2 19.3C23.3 19.1 23.2 18.9 23.2 18.7C23.1 18.5 22.5 17 22.2 16.4C22 15.9 21.7 15.9 21.5 15.9H21C20.8 15.9 20.5 16 20.2 16.3C20 16.6 19.2 17.3 19.2 18.8C19.2 20.3 20.2 21.7 20.4 21.9C20.6 22.1 22.5 25.1 25.4 26.4C26.1 26.7 26.7 26.9 27.2 27.1C27.9 27.3 28.6 27.3 29.1 27.2C29.7 27.1 30.9 26.5 31.2 25.8C31.5 25.2 31.5 24.7 31.4 25.6Z" fill="white"/></svg>
           WhatsApp Us
         </a>
@@ -340,7 +342,7 @@
     </div>
     <div class="hero-photo-card">
       <div class="photo-placeholder">
-        <img src="Asset\Urvashi Makvana.jpeg" alt="Dr. Urvashi Makwana">
+        <img src="Asset/Urvashi Makvana.jpeg" alt="Dr. Urvashi Makwana">
       </div>
       <div class="photo-caption">
         <p>Dr. Urvashi Makwana</p>
@@ -423,7 +425,7 @@
         </div>
         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
           <a href="#appointment" class="btn-primary" style="background: var(--sage); color: white; display: inline-flex;">📅 Book Online Now</a>
-          <a href="https://wa.me/919979757788?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener" class="btn-whatsapp">
+          <a href="https://wa.me/917043402872?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener" class="btn-whatsapp">
             <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5 13.5C32.1 11.1 28.9 9.6 25.5 9.5C18.4 9.5 12.6 15.3 12.6 22.4C12.6 24.7 13.2 26.9 14.4 28.9L12.5 36L19.8 34.1C21.7 35.2 23.6 35.8 25.5 35.8C32.6 35.8 38.4 30 38.4 22.9C38.5 19.4 37 16.1 34.5 13.5ZM25.5 33.5C23.8 33.5 22.1 33 20.6 32.1L20.2 31.9L15.8 33.1L17 28.8L16.7 28.4C15.7 26.8 15.1 25 15.1 22.9C15.1 17 19.9 12.2 25.8 12.2C28.6 12.2 31.3 13.3 33.3 15.3C35.3 17.3 36.4 20 36.4 22.9C36.2 28.8 31.4 33.5 25.5 33.5ZM31.4 25.6C31.1 25.4 29.6 24.7 29.3 24.6C29 24.5 28.8 24.4 28.6 24.7C28.4 25 27.8 25.6 27.6 25.9C27.4 26.1 27.2 26.1 26.9 26C25.8 25.5 24.8 24.8 24 24C23.3 23.2 22.7 22.3 22.2 21.3C22 21 22.2 20.8 22.4 20.6C22.6 20.4 22.8 20.1 22.9 19.9C23.1 19.7 23.1 19.5 23.2 19.3C23.3 19.1 23.2 18.9 23.2 18.7C23.1 18.5 22.5 17 22.2 16.4C22 15.9 21.7 15.9 21.5 15.9H21C20.8 15.9 20.5 16 20.2 16.3C20 16.6 19.2 17.3 19.2 18.8C19.2 20.3 20.2 21.7 20.4 21.9C20.6 22.1 22.5 25.1 25.4 26.4C26.1 26.7 26.7 26.9 27.2 27.1C27.9 27.3 28.6 27.3 29.1 27.2C29.7 27.1 30.9 26.5 31.2 25.8C31.5 25.2 31.5 24.7 31.4 25.6Z" fill="white"/></svg>
             WhatsApp
           </a>
@@ -530,19 +532,19 @@
           <textarea id="patient_message" name="patient_message" placeholder="Please describe your symptoms, duration, and any treatments tried so far..."></textarea>
         </div>
         <button type="submit" class="form-submit" id="submitBtn">
-          <span id="btnText">📅 Request Appointment →</span>
-          <span id="btnLoading" style="display:none;">Sending… please wait</span>
+          <span id="btnText">💳 Proceed to Pay & Book →</span>
+          <span id="btnLoading" style="display:none;">Processing… please wait</span>
         </button>
         <p id="formError" style="display:none; color:#c0392b; text-align:center; font-size:0.85rem; margin-top:0.75rem;"></p>
-        <p class="form-note">We'll confirm your appointment via WhatsApp or email within 24 hours. All information is kept strictly confidential. &nbsp;|&nbsp; Prefer WhatsApp? <a href="https://wa.me/919979757788?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank">Message us directly →</a></p>
+        <p class="form-note">A consultation fee is collected at the time of booking. Confirmation emails are sent to both parties only after successful payment. &nbsp;|&nbsp; Prefer WhatsApp? <a href="https://wa.me/917043402872?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank">Message us directly →</a></p>
       </form>
 
       <div class="form-success" id="formSuccess">
         <div class="checkmark">✅</div>
-        <h3>Appointment Request Sent!</h3>
-        <p>Thank you! A confirmation email has been sent to your inbox.<br>Dr. Makwana's team will contact you within 24 hours.</p>
+        <h3>Payment Successful & Appointment Booked!</h3>
+        <p>Thank you! Your payment has been received and a confirmation email has been sent to your inbox.<br>Dr. Makwana's team will contact you within 24 hours to confirm your appointment.</p>
         <br>
-        <a href="https://wa.me/919979757788?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener" class="btn-whatsapp" style="display:inline-flex; margin-top:0.5rem;">
+        <a href="https://wa.me/917043402872?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener" class="btn-whatsapp" style="display:inline-flex; margin-top:0.5rem;">
           <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.5 13.5C32.1 11.1 28.9 9.6 25.5 9.5C18.4 9.5 12.6 15.3 12.6 22.4C12.6 24.7 13.2 26.9 14.4 28.9L12.5 36L19.8 34.1C21.7 35.2 23.6 35.8 25.5 35.8C32.6 35.8 38.4 30 38.4 22.9C38.5 19.4 37 16.1 34.5 13.5ZM25.5 33.5C23.8 33.5 22.1 33 20.6 32.1L20.2 31.9L15.8 33.1L17 28.8L16.7 28.4C15.7 26.8 15.1 25 15.1 22.9C15.1 17 19.9 12.2 25.8 12.2C28.6 12.2 31.3 13.3 33.3 15.3C35.3 17.3 36.4 20 36.4 22.9C36.2 28.8 31.4 33.5 25.5 33.5ZM31.4 25.6C31.1 25.4 29.6 24.7 29.3 24.6C29 24.5 28.8 24.4 28.6 24.7C28.4 25 27.8 25.6 27.6 25.9C27.4 26.1 27.2 26.1 26.9 26C25.8 25.5 24.8 24.8 24 24C23.3 23.2 22.7 22.3 22.2 21.3C22 21 22.2 20.8 22.4 20.6C22.6 20.4 22.8 20.1 22.9 19.9C23.1 19.7 23.1 19.5 23.2 19.3C23.3 19.1 23.2 18.9 23.2 18.7C23.1 18.5 22.5 17 22.2 16.4C22 15.9 21.7 15.9 21.5 15.9H21C20.8 15.9 20.5 16 20.2 16.3C20 16.6 19.2 17.3 19.2 18.8C19.2 20.3 20.2 21.7 20.4 21.9C20.6 22.1 22.5 25.1 25.4 26.4C26.1 26.7 26.7 26.9 27.2 27.1C27.9 27.3 28.6 27.3 29.1 27.2C29.7 27.1 30.9 26.5 31.2 25.8C31.5 25.2 31.5 24.7 31.4 25.6Z" fill="white"/></svg>
           Also message us on WhatsApp
         </a>
@@ -562,7 +564,7 @@
       </div>
       <div class="contact-text">
         <p>Phone / WhatsApp</p>
-        <a href="https://wa.me/919979757788?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener" class="wa-link">+91 9979757788</a>
+        <a href="https://wa.me/917043402872?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener" class="wa-link">+91 7043402872</a>
       </div>
     </div>
     <div class="contact-item">
@@ -576,7 +578,7 @@
       <div class="contact-icon">📍</div>
       <div class="contact-text">
         <p>Clinic Address</p>
-        <span>Bharuch, gujarat</span>
+        <span>Bharuch, Gujarat</span>
       </div>
     </div>
     <div class="contact-item">
@@ -594,19 +596,21 @@
   <p class="footer-logo">E Heal Homoeopathic Clinic</p>
   <p>Dr. Urvashi Makwana · MD (Homoeopathy) · Assistant Professor</p>
   <p style="margin-top: 0.5rem;">
-    <a href="https://wa.me/919979757788?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener" style="color: #25D366;">💬 WhatsApp: +91 9979757788</a>
+    <a href="https://wa.me/917043402872?text=Hello%20Dr.%20Urvashi%2C%20I%20would%20like%20to%20book%20a%20consultation.%20When%20are%20you%20available%3F" target="_blank" rel="noopener" style="color: #25D366;">💬 WhatsApp: +91 7043402872</a>
   </p>
   <p style="margin-top: 0.75rem;">© 2025 E Heal Homoeopathic Clinic. All rights reserved.</p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // ============================================================
   //  EMAILJS CONFIGURATION
   // ============================================================
-  const EMAILJS_PUBLIC_KEY   = "4u5aobCupeIuANhjN";
-  const EMAILJS_SERVICE_ID   = "service_nrjib4i";
-  const TEMPLATE_TO_DOCTOR   = "template_q6ny6xr";
-  const TEMPLATE_TO_PATIENT  = "template_xm5fp91";
+  const EMAILJS_PUBLIC_KEY   = "W-uFMrx0Ol4CRi1Hu";
+  const EMAILJS_SERVICE_ID   = "service_sx6j7bs";
+  const TEMPLATE_TO_DOCTOR   = "template_u5hi5nb";
+  const TEMPLATE_TO_PATIENT  = "template_l2knhsf";
+  // TIP: Add {{razorpay_payment_id}} in your EmailJS templates
+  //      to show the payment reference in confirmation emails.
   // ============================================================
 
   emailjs.init(EMAILJS_PUBLIC_KEY);
@@ -626,8 +630,17 @@
   }, { threshold: 0.1 });
   reveals.forEach(r => observer.observe(r));
 
-  // ── FORM SUBMIT WITH EMAILJS ──
-  document.getElementById('appointmentForm').addEventListener('submit', async function(e) {
+  // ============================================================
+  //  RAZORPAY CONFIGURATION  ← fill in your values
+  // ============================================================
+  const RAZORPAY_KEY_ID        = "rzp_live_SUGMcqaJq1w4EA";
+  const CONSULTATION_FEE_INR   = 1;                       // amount in ₹
+  const CLINIC_NAME            = "E Heal Homoeopathic Clinic";
+  const CLINIC_LOGO_URL        = "";                         // optional: URL to your logo image
+  // ============================================================
+
+  // ── FORM SUBMIT → RAZORPAY ──
+  document.getElementById('appointmentForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
     const btn     = document.getElementById('submitBtn');
@@ -647,10 +660,7 @@
     }
     errMsg.style.display = 'none';
 
-    btn.disabled = true;
-    btnText.style.display = 'none';
-    btnLoad.style.display = 'inline';
-
+    // Collect all form data
     const templateParams = {
       patient_name:     name,
       patient_phone:    phone,
@@ -663,40 +673,144 @@
       patient_message:  document.getElementById('patient_message').value.trim() || 'No additional details provided.',
     };
 
-    try {
-      if (EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY") throw new Error("DEMO_MODE");
+    // Open Razorpay checkout
+    const options = {
+      key:          RAZORPAY_KEY_ID,
+      amount:       CONSULTATION_FEE_INR * 100,   // Razorpay works in paise
+      currency:     'INR',
+      name:         CLINIC_NAME,
+      description:  'Consultation Fee – ' + concern,
+      image:        CLINIC_LOGO_URL,
+      prefill: {
+        name:    name,
+        email:   email,
+        contact: phone,
+      },
+      theme: { color: '#4a7c59' },
 
-      await emailjs.send(EMAILJS_SERVICE_ID, TEMPLATE_TO_DOCTOR, templateParams);
-      await emailjs.send(EMAILJS_SERVICE_ID, TEMPLATE_TO_PATIENT, templateParams);
+      // ── PAYMENT SUCCESS ──
+      handler: async function(response) {
+        btn.disabled = true;
+        btnText.style.display = 'none';
+        btnLoad.style.display = 'inline';
+        btnLoad.textContent   = 'Payment done! Sending confirmation…';
 
-      document.getElementById('appointmentForm').style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
+        // Attach payment ID to emails
+        templateParams.razorpay_payment_id = response.razorpay_payment_id;
 
-    } catch (error) {
-      if (error.message === "DEMO_MODE") {
+        try {
+          await emailjs.send(EMAILJS_SERVICE_ID, TEMPLATE_TO_DOCTOR,  templateParams);
+          await emailjs.send(EMAILJS_SERVICE_ID, TEMPLATE_TO_PATIENT, templateParams);
+        } catch (mailErr) {
+          console.error('EmailJS error after payment:', mailErr);
+          // Payment succeeded – still show success even if email fails
+        }
+
         document.getElementById('appointmentForm').style.display = 'none';
-        document.getElementById('formSuccess').style.display = 'block';
-      } else {
-        btn.disabled = false;
-        btnText.style.display = 'inline';
-        btnLoad.style.display = 'none';
-        errMsg.textContent = 'Something went wrong. Please try again or contact us directly via WhatsApp.';
-        errMsg.style.display = 'block';
-        console.error('EmailJS error:', error);
+        document.getElementById('formSuccess').style.display     = 'block';
+      },
+
+      // ── PAYMENT FAILURE / DISMISS ──
+      modal: {
+        ondismiss: function() {
+          // User closed the Razorpay modal without paying – do nothing
+          btn.disabled          = false;
+          btnText.style.display = 'inline';
+          btnLoad.style.display = 'none';
+        }
       }
-    }
+    };
+
+    // Attach a one-time failure handler via Razorpay events
+    const rzp = new Razorpay(options);
+    rzp.on('payment.failed', function(response) {
+      btn.disabled          = false;
+      btnText.style.display = 'inline';
+      btnLoad.style.display = 'none';
+
+      // Show failure popup
+      showPaymentFailurePopup(
+        response.error.description || 'Your payment could not be processed.',
+        response.error.code        || ''
+      );
+    });
+
+    rzp.open();
   });
+
+  // ── PAYMENT FAILURE POPUP ──
+  function showPaymentFailurePopup(description, code) {
+    // Remove any existing popup first
+    const old = document.getElementById('rzp-failure-popup');
+    if (old) old.remove();
+
+    const overlay = document.createElement('div');
+    overlay.id    = 'rzp-failure-popup';
+    overlay.style.cssText = [
+      'position:fixed','inset:0','z-index:9999',
+      'background:rgba(0,0,0,0.55)',
+      'display:flex','align-items:center','justify-content:center',
+      'font-family:"DM Sans",sans-serif','padding:1rem'
+    ].join(';');
+
+    overlay.innerHTML = `
+      <div style="
+        background:#fff; border-radius:20px; padding:2.5rem 2rem;
+        max-width:420px; width:100%; text-align:center;
+        box-shadow:0 24px 60px rgba(0,0,0,0.2); position:relative;
+      ">
+        <div style="font-size:3rem; margin-bottom:0.75rem;">❌</div>
+        <h3 style="
+          font-family:'Cormorant Garamond',serif; font-size:1.7rem;
+          color:#c0392b; margin-bottom:0.5rem;
+        ">Payment Failed</h3>
+        <p style="color:#555; font-size:0.93rem; line-height:1.7; margin-bottom:0.4rem;">
+          ${description}
+        </p>
+        ${code ? `<p style="color:#999; font-size:0.78rem; margin-bottom:1.4rem;">Error code: ${code}</p>` : '<br>'}
+        <p style="color:#555; font-size:0.88rem; margin-bottom:1.75rem;">
+          No charge was made. Please try again or contact us via WhatsApp.
+        </p>
+        <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
+          <button onclick="document.getElementById('rzp-failure-popup').remove()" style="
+            background:#4a7c59; color:#fff; border:none; border-radius:50px;
+            padding:0.75rem 1.75rem; font-size:0.9rem; cursor:pointer;
+            font-family:'DM Sans',sans-serif;
+          ">Try Again</button>
+          <a href="https://wa.me/917043402872?text=Hello%20Dr.%20Urvashi%2C%20my%20payment%20failed.%20Can%20you%20help%3F"
+             target="_blank" rel="noopener" style="
+            background:#25D366; color:#fff; border-radius:50px;
+            padding:0.75rem 1.75rem; font-size:0.9rem; text-decoration:none;
+            display:inline-flex; align-items:center; gap:0.4rem;
+            font-family:'DM Sans',sans-serif;
+          ">💬 WhatsApp Us</a>
+        </div>
+      </div>
+    `;
+
+    // Close on overlay click
+    overlay.addEventListener('click', function(ev) {
+      if (ev.target === overlay) overlay.remove();
+    });
+
+    document.body.appendChild(overlay);
+  }
 
   // Smooth nav highlight
   const sections = document.querySelectorAll('section[id]');
   window.addEventListener('scroll', () => {
     const scrollY = window.pageYOffset;
     sections.forEach(s => {
-      if (scrollY > s.offsetTop - 120) {
-        document.querySelectorAll('.nav-links a').forEach(a => {
-          a.style.color = '';
-          if (a.getAttribute('href') === '#' + s.id) a.style.color = '#4a7c59';
-        });
+      const top    = s.offsetTop - 100;
+      const bottom = top + s.offsetHeight;
+      const id     = s.getAttribute('id');
+      const link   = document.querySelector('.nav-links a[href="#' + id + '"]');
+      if (link) {
+        if (scrollY >= top && scrollY < bottom) {
+          link.style.color = 'var(--sage)';
+        } else {
+          link.style.color = '';
+        }
       }
     });
   });
